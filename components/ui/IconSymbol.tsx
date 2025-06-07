@@ -22,6 +22,7 @@ const MAPPING = {
   'person.2.fill': 'group',
   'plus.circle.fill': 'add-circle',
   'chart.pie.fill': 'pie-chart',
+  'plus' : 'add'
 } as IconMapping;
 
 /**

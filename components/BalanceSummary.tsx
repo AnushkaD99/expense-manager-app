@@ -22,7 +22,7 @@ export default function BalanceSummary() {
         }
     ]
     return (
-        <ThemedView style={styles.blanceContainer}>
+        <ThemedView style={styles.container}>
             <View style={{gap: 10}}>
                 <ThemedText type='subtitle'>Total Balance</ThemedText>
                 <View>
@@ -39,7 +39,7 @@ export default function BalanceSummary() {
                 showGradient
                 sectionAutoFocus
                 radius={70}
-                innerRadius={55}
+                innerRadius={50}
                 innerCircleColor={Colors[theme].background}
                 centerLabelComponent={() => {
                     return (
@@ -58,9 +58,6 @@ export default function BalanceSummary() {
 
 const styles = StyleSheet.create({
     container: {
-        gap: 10
-    },
-    blanceContainer: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center'

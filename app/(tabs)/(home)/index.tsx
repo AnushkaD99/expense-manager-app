@@ -1,4 +1,5 @@
 import BalanceSummary from '@/components/BalanceSummary';
+import GroupBlock from '@/components/GroupBlock';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedView } from '@/components/ThemedView';
 import { Colors } from '@/constants/Colors';
@@ -10,6 +11,7 @@ export default function HomeScreen() {
   return (
     <ParallaxScrollView>
       <BalanceSummary />
+      <GroupBlock />
       {/* <View style={{height: 500, backgroundColor: "#000"}}></View> */}
     </ParallaxScrollView>
   );
