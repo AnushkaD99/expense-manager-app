@@ -1,6 +1,7 @@
 import BalanceSummary from '@/components/BalanceSummary';
 import GroupBlock from '@/components/GroupBlock';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
+import RecentExpenses from '@/components/RecentExpenses';
 import { ThemedView } from '@/components/ThemedView';
 import { Colors } from '@/constants/Colors';
 import { ScrollView, Text, View } from 'react-native';
@@ -12,7 +13,7 @@ export default function HomeScreen() {
     <ParallaxScrollView>
       <BalanceSummary />
       <GroupBlock />
-      {/* <View style={{height: 500, backgroundColor: "#000"}}></View> */}
+      <RecentExpenses />
     </ParallaxScrollView>
   );
 }
