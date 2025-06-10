@@ -13,7 +13,7 @@ export default function RecentExpenses() {
     return (
         <ThemedView style={{gap: 20}}>
             <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}>
-                <ThemedText type='subtitle'>My Groups</ThemedText>
+                <ThemedText type='subtitle'>My Recent Expenses</ThemedText>
                 <ThemedText type='link'>See All</ThemedText>
             </View>
             <View>
@@ -29,7 +29,7 @@ export default function RecentExpenses() {
                             <View>
                                 <ThemedText type='medium'>{item.description}</ThemedText>
                                 <ThemedText type='default'>
-                                    {item.date ? new Date(item.date).toLocaleDateString('en-CA') : null}
+                                    {item.paidBy.name}  {item.date ? new Date(item.date).toLocaleDateString('en-CA') : null}
                                 </ThemedText>
                             </View>
                         </View>
